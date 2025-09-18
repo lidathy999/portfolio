@@ -14,9 +14,9 @@ function LoadingScreen({ onFinish }: { onFinish: () => void }) {
   }, [onFinish]);
 
   return (
-    <div className="fixed inset-0 flex flex-col items-center justify-center bg-amber-50 z-50">
+    <div className="fixed inset-0 flex flex-col items-center justify-center z-50">
       {showTitle ? (
-        <h1 className="text-5xl font-bold animate-fade-in">Lida</h1>
+        <h1 className="text-5xl font-bold zoom-in-down">THY LYDA</h1>
       ) : (
         <h2 className="text-2xl font-semibold animate-typewriter">
           Front-end Developer
