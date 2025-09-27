@@ -1,6 +1,6 @@
 "use client";
 import Image from "next/image";
-import { useState } from "react";
+// import { useState } from "react";
 
 type ProjectTypes = {
   id: number;
@@ -13,12 +13,12 @@ type ProjectTypes = {
   description?: string;
 };
 export function Projects() {
-  const [mouseOver, setMouseOver] = useState<number | null>(null);
+  // const [mouseOver, setMouseOver] = useState<number | null>(null);
   const projects: ProjectTypes[] = [
     {
       id: 1,
       name: "Portfolio",
-      cover: "../../images/portfolio_cover.png",
+      cover: "/images/portfolio_cover.png",
       gitlab_url: "https://gitlab.com/Thylida/thylida",
       title: "",
       description: "",
@@ -26,7 +26,7 @@ export function Projects() {
     {
       id: 2,
       name: "Todo List",
-      cover: "../../images/todo-project.png",
+      cover: "/images/todo-project.png",
       gitlab_url: "",
       title: "",
       description: "",
@@ -34,7 +34,7 @@ export function Projects() {
     {
       id: 3,
       name: "Orkun Admin",
-      cover: "../../images/orkun-portal.png",
+      cover: "/images/orkun-portal.png",
       gitlab_url: "",
       title: "",
       description: "",
@@ -42,7 +42,7 @@ export function Projects() {
     {
       id: 4,
       name: "Camemis App",
-      cover: "../../images/camemis-app.png",
+      cover: "/images/camemis-app.png",
       gitlab_url: "",
       className: "bg-sky-100",
       project_url:
@@ -52,7 +52,7 @@ export function Projects() {
     {
       id: 5,
       name: "Camemis Library",
-      cover: "../../images/camemis-e-library.webp",
+      cover: "/images/camemis-e-library.webp",
       gitlab_url: "",
       className: "bg-sky-100",
       description: "",
@@ -60,7 +60,7 @@ export function Projects() {
     {
       id: 6,
       name: "UNT Wholesale",
-      cover: "../../images/unt-wholesale.png",
+      cover: "/images/unt-wholesale.png",
       gitlab_url: "https://www.untwholesale.com/",
       project_url: "https://www.untwholesale.com/",
       description: "",
@@ -68,7 +68,7 @@ export function Projects() {
     {
       id: 7,
       name: "EMenu",
-      cover: "../../images/unt-wholesale.png",
+      cover: "/images/unt-wholesale.png",
       gitlab_url: "https://www.untwholesale.com/",
       project_url: "https://www.untwholesale.com/",
       description: "",
@@ -108,13 +108,15 @@ export function Projects() {
                 >
                   {project.cover && (
                     <Image
+                      width={400}
+                      height={400}
                       src={project.cover}
                       alt="portfolio"
                       className="relative m-auto object-cover h-full inset-shadow-2xs p-1"
                     />
                   )}
                 </div>
-                {mouseOver === project.id && (
+                {/* {mouseOver === project.id && (
                   <div className="z-[888] absolute top-0 bottom-0 left-0 right-0 rounded-[8px] bg-[rgba(0,0,0,0.8)] bg-opacity-7 z-20  justify-center items-center">
                     <div className="flex flex-col text-white justify-center items-center h-full">
                       <div className="text-2xl pb-3">{project.name}</div>
@@ -133,7 +135,7 @@ export function Projects() {
                       <div>Technologies: React, Next.js, TailwindCSS</div>
                     </div>
                   </div>
-                )}
+                )} */}
               </div>
               <div>jjjj</div>
             </div>

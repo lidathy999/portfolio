@@ -6,8 +6,10 @@ function AboutMe() {
     <div className="mt-[60px] text-white text-black global-padding-t" id="aboutMe">
       <div className="flex gap-5 ">
         <Image
-          src="../../images/profile.jpg"
+          src="/images/profile.jpg"
           alt="profile"
+          width={300}
+          height={300}
           className="w-[30%] h-[400px] object-cover rounded-md drop-shadow-md"
         />
         <div className="text-justify">

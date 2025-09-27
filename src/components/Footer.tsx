@@ -15,7 +15,7 @@ export default function Footer() {
           <Image
             width={32}
             height={32}
-            src="../../images/gitlab.png"
+            src="/images/gitlab.png"
             alt="gitlab"
           />
         </a>
@@ -23,7 +23,7 @@ export default function Footer() {
           <Image
             width={32}
             height={32}
-            src="../../images/linkedin.png"
+            src="/images/linkedin.png"
             alt="linkedIn"
           />
         </a>
