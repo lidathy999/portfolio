@@ -1,4 +1,5 @@
 import GitHubIcon from '@mui/icons-material/GitHub';
+import Image from 'next/image';
 
 export default function Footer() {
   const year = new Date().getFullYear();
@@ -11,7 +12,7 @@ export default function Footer() {
           <GitHubIcon fontSize='large' />
         </a>
         <a href="https://gitlab.com/Thylida">
-          <img
+          <Image
             width={32}
             height={32}
             src="../../images/gitlab.png"
@@ -19,7 +20,7 @@ export default function Footer() {
           />
         </a>
         <a href="https://www.linkedin.com/in/lyda-thy-475381229">
-          <img
+          <Image
             width={32}
             height={32}
             src="../../images/linkedin.png"

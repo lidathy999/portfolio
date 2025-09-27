@@ -14,7 +14,7 @@ export default function ContactUs() {
       <div className="grid grid-cols-2 gap-4">
         <div>
           <h2 className="text-3xl font-bold text-primary-500 global-padding-b text-left">
-            Let's Connect! 💌
+            Let&apos;s Connect! 💌
           </h2>
           If you ever want to grab a coffee/bubble tea (virtually) or just want
           a quick chat - you can find me on social media or you can send me a

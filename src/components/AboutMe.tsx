@@ -1,17 +1,20 @@
+import Image from "next/image";
+
 function AboutMe() {
+
   return (
     <div className="mt-[60px] text-white text-black global-padding-t" id="aboutMe">
       <div className="flex gap-5 ">
-        <img
+        <Image
           src="../../images/profile.jpg"
           alt="profile"
           className="w-[30%] h-[400px] object-cover rounded-md drop-shadow-md"
         />
         <div className="text-justify">
           <div>
-            <h1 className="text-xl font-bold">Hello, I'm Lyda!</h1>
+            <h1 className="text-xl font-bold">Hello, I&apos;m Lyda!</h1>
             <p className="text-xl">
-              I'm a{" "}
+              I&apos;m a{" "}
               <span className="text-primary-500 text-2xl">
                 Front-end Developer
               </span>
@@ -30,7 +33,7 @@ function AboutMe() {
             portfolio is a little outdated at the moment. I haven’t had time to
             update it, but I’m keeping it up for now, and I hope it gives you
             some inspiration!
-          </div>
+          </div>  
           <div className="text-lg">
             Other than coding, I spend most of my free time playing Animal
             Crossing (add me!) or any other video games. 🤓 I've also been
