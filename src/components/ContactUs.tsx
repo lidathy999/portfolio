@@ -8,7 +8,7 @@ import {
 export default function ContactUs() {
   return (
     <div
-      className="w-[80%] mx-auto bg-primary-50 p-6 global-padding-t"
+      className="border-t mx-auto bg-primary-50 p-6 global-padding-t"
       id="contactMe"
     >
       <div className="grid grid-cols-2 gap-4">
@@ -32,9 +32,10 @@ export default function ContactUs() {
               <TextField
                 id="outlined-basic"
                 label="Name"
-                variant="outlined"
+                variant="filled"
                 placeholder="Name"
                 name="name"
+                className="bg-white rounded"
               />
             </FormControl>
             <FormControl
@@ -50,6 +51,7 @@ export default function ContactUs() {
                 variant="outlined"
                 placeholder="Email"
                 name="email"
+                className="bg-white rounded"
               />
             </FormControl>
             <FormControl
@@ -64,9 +66,10 @@ export default function ContactUs() {
                 minRows={4}
                 aria-label="maximum height"
                 placeholder="Message"
+                className="bg-white rounded"
               />
             </FormControl>
-            <Button color="primary" variant="outlined" type="submit">
+            <Button color="primary" variant="contained" type="submit">
               Submit
             </Button>
           </form>

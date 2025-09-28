@@ -13,11 +13,11 @@ function AboutMe() {
           className="w-[30%] h-[400px] object-cover rounded-md drop-shadow-md"
         />
         <div className="text-justify">
-          <div>
-            <h1 className="text-xl font-bold">Hello, I&apos;m Lyda!</h1>
-            <p className="text-xl">
+          <div className="mb-10">
+            <h1 className="text-xl font-bold slideUp gradient-text">Hello, I&apos;m Lyda!</h1>
+            <p className="text-2xl font-semibold slideUp">
               I&apos;m a{" "}
-              <span className="text-primary-500 text-2xl">
+              <span className="text-primary-500 text-4xl slideUp">
                 Front-end Developer
               </span>
             </p>
@@ -30,18 +30,6 @@ function AboutMe() {
             independently and in team collaborations. I love to challenge and
             drive innovation.
           </div>
-          {/* <div className="global-padding-b text-lg">
-            Hello again! Thanks for scrolling this far! 🤗 Just a heads up, my
-            portfolio is a little outdated at the moment. I haven’t had time to
-            update it, but I’m keeping it up for now, and I hope it gives you
-            some inspiration!
-          </div>  
-          <div className="text-lg">
-            Other than coding, I spend most of my free time playing Animal
-            Crossing (add me!) or any other video games. 🤓 I've also been
-            trying to read more so feel free to reach out to me with any book
-            recommendations!
-          </div> */}
         </div>
       </div>
     </div>

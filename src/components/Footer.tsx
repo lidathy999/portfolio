@@ -1,5 +1,5 @@
-import GitHubIcon from '@mui/icons-material/GitHub';
 import Image from 'next/image';
+import GitHubIcon from '@mui/icons-material/GitHub';
 
 export default function Footer() {
   const year = new Date().getFullYear();
