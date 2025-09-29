@@ -32,15 +32,15 @@ export function Projects() {
       <div className="mx-auto w-full mt-[-200px] global-padding-t bg-primary-50 rounded-t-lg">
         <div className="grid grid-cols-1 gap-5">
           {PROJECTS.map((project: ProjectTypes) => (
-            <div className="grid grid-cols-2 gap-6" key={project.id}>
+            <div className="grid grid-cols-[1fr_2fr] gap-6" key={project.id}>
               <div
                 className="relative"
-                // onMouseOver={() => {
-                //   setMouseOver(project.id);
-                // }}
-                // onMouseOut={() => {
-                //   setMouseOver(null);
-                // }}
+              // onMouseOver={() => {
+              //   setMouseOver(project.id);
+              // }}
+              // onMouseOut={() => {
+              //   setMouseOver(null);
+              // }}
               >
                 <div
                   className={`h-[300px] font-bold !text-xl bg-white rounded-[8px] relative ${project.className}`}
@@ -48,8 +48,7 @@ export function Projects() {
                 >
                   {project.cover && (
                     <Image
-                      width={300}
-                      height={300}
+                      fill
                       src={project.cover}
                       alt="portfolio"
                       className="relative m-auto object-cover h-full inset-shadow-2xs p-1"

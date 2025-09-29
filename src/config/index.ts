@@ -10,7 +10,7 @@ const PROJECTS = [
   {
     id: 1,
     name: "Portfolio",
-    cover: "/images/portfolio_cover.png",
+    cover: "/images/portfolio.png",
     gitlab_url: "https://gitlab.com/Thylida/portfolio",
     title: "",
     description: "",
@@ -60,7 +60,7 @@ const PROJECTS = [
   {
     id: 7,
     name: "EMenu",
-    cover: "/images/unt-wholesale.png",
+    cover: "/images/e-menu.png",
     gitlab_url: "",
     project_url: "",
     description: "",
