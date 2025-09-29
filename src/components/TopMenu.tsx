@@ -13,10 +13,19 @@ export default function TopMenu() {
     }
   };
 
+    const handleDownload = () => {
+        const link = document.createElement('a');
+        link.href = '/resume_lyda.pdf';
+        link.download = 'resume';
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+      };
+
   const menus = [
     { label: "Home", id: "home", icon: <HomeIcon fontSize="small" />, onClick: () => handleClick("home") },
     // { label: "About", id: "aboutMe" },
-    { label: "Resume", id: "resume", icon: <CloudDownloadIcon fontSize="small" /> },
+    { label: "Resume", id: "resume", icon: <CloudDownloadIcon fontSize="small" />, onClick: handleDownload },
     { label: "Projects", id: "projects", icon: <ReorderIcon fontSize="small" />, onClick: () => handleClick("projects") },
     { label: "Contact", id: "contactMe", icon: <PermContactCalendarIcon fontSize="small" />, onClick: () => handleClick("contactMe") },
   ];
