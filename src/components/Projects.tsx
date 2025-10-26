@@ -1,5 +1,8 @@
 "use client";
+import React from "react";
 import Image from "next/image";
+import GitHubIcon from '@mui/icons-material/GitHub';
+import ArrowOutwardIcon from '@mui/icons-material/ArrowOutward';
 
 import { PROJECTS } from "@/config";
 
@@ -14,6 +17,48 @@ type ProjectTypes = {
   description?: string;
 };
 export function Projects() {
+
+  const [mouseOver, setMouseOver] = React.useState<number | null>(null);
+
+  const projectDescription = (project: ProjectTypes) => {
+    if (mouseOver !== project.id) return null;
+    const { name, title, description, gitlab_url, project_url } = project;
+    
+    return (
+      <div className="absolute bg-black/60 top-0 left-0 right-0 bottom-0 rounded-[8px] p-4 text-white flex flex-col backdrop-blur-xs">
+
+        <div className="flex items-center justify-between">
+          <h3 className="text-2xl font-bold pb-2">{name}</h3>
+          <div>
+            {gitlab_url && (
+              <div className="text-md">
+                <a href={gitlab_url}>
+                  <GitHubIcon fontSize='large' />
+                </a>
+              </div>
+            )}
+            {project_url && (
+              <div className="text-md border rounded-sm">
+                <a
+                  href={project_url}
+                  className="text-primary-500"
+                  target="_blank"
+                >
+                  <ArrowOutwardIcon />
+                </a>
+              </div>
+            )}
+          </div>
+        </div>
+
+        {title && (
+          <div className="text-lg font-semibold pb-2">{title}</div>
+        )}
+
+        {description && <div className="text-md pb-4">{description}</div>}
+      </div>
+    )
+  };
 
   return (
     <div className="slideUp">
@@ -30,63 +75,37 @@ export function Projects() {
       </div>
 
       <div className="mx-auto w-full mt-[-200px] global-padding-t bg-primary-50 rounded-t-lg">
-        <div className="grid grid-cols-1 gap-5">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 ">
           {PROJECTS.map((project: ProjectTypes) => (
-            <div className="grid grid-cols-[1fr_2fr] gap-6" key={project.id}>
+            <div
+              key={project.id}
+              data-aos="fade-up"
+              data-aos-delay="200"
+              className="relative"
+              onMouseOver={() => {
+                setMouseOver(project.id);
+              }}
+              onMouseOut={() => {
+                setMouseOver(null);
+              }}
+            >
               <div
-                className="relative"
-              // onMouseOver={() => {
-              //   setMouseOver(project.id);
-              // }}
-              // onMouseOut={() => {
-              //   setMouseOver(null);
-              // }}
+                className={`h-[350px] font-bold !text-xl bg-white rounded-[8px] ${project.className}`}
+                key={project.name}
               >
-                <div
-                  className={`h-[300px] font-bold !text-xl bg-white rounded-[8px] relative ${project.className}`}
-                  key={project.name}
-                >
-                  {project.cover && (
-                    <Image
-                      fill
-                      src={project.cover}
-                      alt="portfolio"
-                      className="relative m-auto object-cover h-full inset-shadow-2xs p-1"
-                    />
-                  )}
-                </div>
-              </div>
-              <div>
-                <h3 className="text-2xl font-bold pb-2">{project.name}</h3>
-                {project?.title && (
-                  <div className="text-lg font-semibold pb-2">{project.title}</div>
-                )}
-                <div className="text-md pb-4">{project.description}</div>
-                {project?.gitlab_url && (
-                  <div className="text-md">
-                    GitLab URL:{" "}
-                    <a
-                      href={project.gitlab_url}
-                      className="text-primary-500"
-                      target="_blank"
-                    >
-                      {project.gitlab_url}
-                    </a>
-                  </div>
-                )}
-                {project?.project_url && (
-                  <div className="text-md">
-                    Project URL:{" "}
-                    <a
-                      href={project.project_url}
-                      className="text-primary-500"
-                      target="_blank"
-                    >
-                      {project.project_url}
-                    </a>
-                  </div>
+                {project.cover && (
+                  <Image
+                    fill
+                    priority
+                    sizes="(max-width: 768px) 100vw, 50vw"
+                    src={project.cover}
+                    alt="portfolio"
+                    className=" m-auto object-cover h-full inset-shadow-2xs p-1"
+                  />
                 )}
               </div>
+
+              {projectDescription(project)}
             </div>
           ))}
         </div>
