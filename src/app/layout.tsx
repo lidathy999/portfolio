@@ -26,6 +26,7 @@ export default function RootLayout({
     <html lang="en">
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        style={{backgroundRepeat: 'no-repeat', backgroundImage: "url('/images/bg.jpg')", backgroundBlendMode: 'hard-light', backgroundSize: 'cover', backgroundPosition: 'center'}}
       >
         {children}
       </body>

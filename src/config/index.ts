@@ -13,7 +13,7 @@ const PROJECTS = [
     cover: "/images/portfolio.png",
     gitlab_url: "https://gitlab.com/Thylida/portfolio",
     title: "",
-    description: "",
+    description: "My personal portfolio website showcasing my skills, projects, and experience as a front-end developer.",
   },
   {
     id: 2,
@@ -21,7 +21,7 @@ const PROJECTS = [
     cover: "/images/todo-project.png",
     gitlab_url: "",
     title: "",
-    description: "",
+    description: "This is todo list project that we can add, update, delete and mark as completed tasks.",
   },
   {
     id: 3,
@@ -33,21 +33,21 @@ const PROJECTS = [
   },
   {
     id: 4,
-    name: "Camemis App",
+    name: "Camis App",
     cover: "/images/camemis-app.png",
     gitlab_url: "",
     className: "bg-sky-100",
     project_url:
       "https://play.google.com/store/apps/details?id=com.camis.camemis_student_application&hl=en",
-    description: "",
+    description: "The CAMEMIS App is an Educational Management and Information System (EMIS) designed to improve the quality of teaching and learning, thus providing a better space for teachers, students and parents to collaborate. The app offers teachers quick access to the most frequent course facilitation tasks, including daily attendance taking, grading, in-class communication, sending announcements, and staying updated with daily tasks. In addition, teachers can easily review a detailed report on student progress, manage multiple class sections and create tests and exams for each subject.",
   },
   {
     id: 5,
-    name: "Camemis Library",
+    name: "Camis Library",
     cover: "/images/camemis-e-library.webp",
     gitlab_url: "",
     className: "bg-sky-100",
-    description: "",
+    description: "E-Library is an app that lets users read a wide range of books online or offline. It allows readers to save their current reading progress, add books to their personal “My Books” collection for offline access, and share their favorite titles with others.",
   },
   {
     id: 6,
@@ -55,7 +55,7 @@ const PROJECTS = [
     cover: "/images/unt-wholesale.png",
     gitlab_url: "",
     project_url: "https://www.untwholesale.com/",
-    description: "",
+    description: "This is an official website for UNT Wholesale, an export import products company. This website is built for showcasing their products to their clients.",
   },
   {
     id: 7,
@@ -63,7 +63,7 @@ const PROJECTS = [
     cover: "/images/e-menu.png",
     gitlab_url: "",
     project_url: "",
-    description: "",
+    description: "Easy, Efficient, Experienced POS Restaurant System. Manage easier, control cost more efficiently with experienced POS system on restaurant. You can access to the cloud anytime and anywhere in the world. eMenu works both online and offline.",
   },
 ];
 

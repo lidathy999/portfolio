@@ -14,8 +14,8 @@ function AboutMe() {
         />
         <div className="text-justify">
           <div className="mb-10">
-            <h1 className="text-xl font-bold slideUp gradient-text">Hello, I&apos;m Lyda!</h1>
-            <p className="text-2xl font-semibold slideUp">
+            <h1 data-aos="flip-up" className="text-xl font-bold gradient-text">Hello, I&apos;m Lyda!</h1>
+            <p className="text-2xl font-semibold">
               I&apos;m a{" "}
               <span className="text-primary-500 text-4xl slideUp">
                 Front-end Developer

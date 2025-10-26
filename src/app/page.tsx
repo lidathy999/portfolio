@@ -1,4 +1,5 @@
 import AboutMe from "@/components/AboutMe";
+import AOSInit from "@/components/AOSInit";
 import ContactUs from "@/components/ContactUs";
 import Footer from "@/components/Footer";
 import { Projects } from "@/components/Projects";
@@ -9,6 +10,7 @@ const Home = () => {
 
   return (
     <div className="">
+      <AOSInit/>
       <main className="grid gap-10 px-10 py-5">
         <div className="pb-10 justify-center mx-auto">
           <div className="flex overflow-scroll mb-6 justify-between flex-col">
