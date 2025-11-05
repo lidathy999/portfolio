@@ -18,8 +18,8 @@ const Home = () => {
             <AboutMe />
           </div>
         </div>
-        <div className="flex mt-10">
-          <ArrowDownwardIcon className="animate-bounce text-primary-500 border rounded-full mx-auto" fontSize="large" />
+        <div className="flex mt-6">
+          <ArrowDownwardIcon className="animate-bounce text-primary-500 border border-secondary rounded-full mx-auto" fontSize="large" />
         </div>
         <Projects />
         <ContactUs />‍

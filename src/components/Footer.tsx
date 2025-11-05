@@ -5,7 +5,7 @@ export default function Footer() {
   const year = new Date().getFullYear();
 
   return (
-    <div className=" mt-8 h-[100px] max-h-[100px] p-4 text-center border-t border-primary-200 bg-white/10 backdrop-blur-none">
+    <div className=" mt-8 h-[100px] max-h-[100px] p-4 text-center border-t border-secondary bg-white/10 backdrop-blur-none">
       <span>Copyright © {year} THY LYDA</span>
       <div className="flex gap-3 mt-2 justify-center">
         <a href='https://github.com/lidathy999'>

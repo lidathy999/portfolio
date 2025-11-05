@@ -33,6 +33,14 @@ const PROJECTS = [
   },
   {
     id: 4,
+    name: "Orkun Miniapp",
+    cover: "/images/miniapp.png",
+    gitlab_url: "",
+    title: "",
+    description: "",
+  },
+  {
+    id: 5,
     name: "Camis App",
     cover: "/images/camemis-app.png",
     gitlab_url: "",
@@ -42,7 +50,7 @@ const PROJECTS = [
     description: "The CAMEMIS App is an Educational Management and Information System (EMIS) designed to improve the quality of teaching and learning, thus providing a better space for teachers, students and parents to collaborate. The app offers teachers quick access to the most frequent course facilitation tasks, including daily attendance taking, grading, in-class communication, sending announcements, and staying updated with daily tasks. In addition, teachers can easily review a detailed report on student progress, manage multiple class sections and create tests and exams for each subject.",
   },
   {
-    id: 5,
+    id: 6,
     name: "Camis Library",
     cover: "/images/camemis-e-library.webp",
     gitlab_url: "",
@@ -50,7 +58,7 @@ const PROJECTS = [
     description: "E-Library is an app that lets users read a wide range of books online or offline. It allows readers to save their current reading progress, add books to their personal “My Books” collection for offline access, and share their favorite titles with others.",
   },
   {
-    id: 6,
+    id: 7,
     name: "UNT Wholesale",
     cover: "/images/unt-wholesale.png",
     gitlab_url: "",
@@ -58,7 +66,7 @@ const PROJECTS = [
     description: "This is an official website for UNT Wholesale, an export import products company. This website is built for showcasing their products to their clients.",
   },
   {
-    id: 7,
+    id: 8,
     name: "EMenu",
     cover: "/images/e-menu.png",
     gitlab_url: "",
