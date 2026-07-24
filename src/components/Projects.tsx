@@ -90,7 +90,7 @@ export function Projects() {
               }}
             >
               <div
-                className={`h-[350px] font-bold !text-xl bg-white rounded-[8px] ${project.className}`}
+                className={`h-[350px] font-bold !text-xl bg-white rounded-[12px] ${project.className}`}
                 key={project.name}
               >
                 {project.cover && (
@@ -100,7 +100,7 @@ export function Projects() {
                     sizes="(max-width: 768px) 100vw, 50vw"
                     src={project.cover}
                     alt="portfolio"
-                    className=" m-auto object-cover h-full inset-shadow-2xs p-1"
+                    className=" m-auto object-cover h-full inset-shadow-2xs p-1 rounded-[12px]"
                   />
                 )}
               </div>

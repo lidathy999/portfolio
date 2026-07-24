@@ -4,13 +4,13 @@ function AboutMe() {
 
   return (
     <div className="mt-[60px] text-white text-black global-padding-t" id="aboutMe">
-      <div className="flex gap-12 h-[420px] pl-[15px]">
+      <div className="flex flex-col items-center md:flex-col lg:flex-row lg:items-start gap-12 h-[420px] pl-[15px]">
         <Image
           src="/images/profile.jpg"
           alt="profile"
           width={300}
           height={300}
-          className="w-[30%] h-[400px] shadow-[0px_0px_11px_1px_#56d5d5] border-[5px] border-secondary object-cover rounded-full drop-shadow-md"
+          className="w-[45%] lg:w-[30%] h-[400px] shadow-[0px_0px_11px_1px_#56d5d5] border-[5px] border-secondary object-cover rounded-full drop-shadow-md"
         />
         <div className="text-justify">
           <div className="mb-10">
