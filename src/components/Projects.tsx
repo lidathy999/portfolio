@@ -17,7 +17,7 @@ type ProjectTypes = {
 };
 export function Projects() {
 
-  const [mouseOver, setMouseOver] = React.useState<number | null>(null);
+  const [ mouseOver, setMouseOver ] = React.useState<number | null>(null);
 
   const projectDescription = (project: ProjectTypes) => {
     if (mouseOver !== project.id) return null;

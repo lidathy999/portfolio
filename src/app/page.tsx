@@ -4,7 +4,6 @@ import ContactUs from "@/components/ContactUs";
 import Footer from "@/components/Footer";
 import { Projects } from "@/components/Projects";
 import TopMenu from "@/components/TopMenu";
-import ArrowDownwardIcon from '@mui/icons-material/ArrowDownward';
 
 const Home = () => {
 
@@ -12,7 +11,6 @@ const Home = () => {
     <div className="min-w-[600px] overflow-auto">
       <AOSInit />
       <main className="grid gap-10 px-10 pt-4 pb-0">
-      
         <TopMenu />
         <AboutMe />
         <Projects />
