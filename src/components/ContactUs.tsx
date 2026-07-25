@@ -8,7 +8,7 @@ import {
 export default function ContactUs() {
   return (
     <div
-      className="border-t mx-auto bg-primary-50 p-6 global-padding-t"
+      className="border-t mx-auto bg-primary-50 p-10 global-padding-t"
       id="contactMe"
     >
       <div className="grid grid-cols-2 gap-4">

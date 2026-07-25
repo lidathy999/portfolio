@@ -9,21 +9,14 @@ import ArrowDownwardIcon from '@mui/icons-material/ArrowDownward';
 const Home = () => {
 
   return (
-    <div>
-      <AOSInit/>
-      <main className="grid gap-10 px-10 pt-10">
-        <div className="pb-10 justify-center mx-auto">
-          <div className="flex overflow-scroll mb-6 justify-between flex-col">
-            <TopMenu />
-            <AboutMe />
-          </div>
-           <div className="flex mt-6">
-          <ArrowDownwardIcon className="animate-bounce text-primary-500 border border-secondary rounded-full mx-auto" fontSize="large" />
-        </div>
-        </div>
-       
+    <div className="min-w-[600px] overflow-auto">
+      <AOSInit />
+      <main className="grid gap-10 px-10 pt-4 pb-0">
+      
+        <TopMenu />
+        <AboutMe />
         <Projects />
-        <ContactUs />      
+        <ContactUs />
       </main>
       <footer>
         <Footer />

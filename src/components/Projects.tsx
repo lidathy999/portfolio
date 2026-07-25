@@ -3,8 +3,7 @@ import React from "react";
 import Image from "next/image";
 import GitHubIcon from '@mui/icons-material/GitHub';
 import ArrowOutwardIcon from '@mui/icons-material/ArrowOutward';
-
-import { PROJECTS } from "@/config";
+import { PROJECTS } from "@/constants/common.const";
 
 type ProjectTypes = {
   id: number;
@@ -23,7 +22,7 @@ export function Projects() {
   const projectDescription = (project: ProjectTypes) => {
     if (mouseOver !== project.id) return null;
     const { name, title, description, gitlab_url, project_url } = project;
-    
+
     return (
       <div className="absolute bg-black/60 top-0 left-0 right-0 bottom-0 rounded-[8px] p-4 text-white flex flex-col backdrop-blur-xs">
 
@@ -61,53 +60,55 @@ export function Projects() {
   };
 
   return (
-    <div className="slideUp">
-      <div className="bg-primary-500 h-[400px]" id="projects">
-        <div className="h-full flex flex-col py-8 items-center">
+    <div>
+      <div className="bg-primary-500" id="projects">
+        <div className="flex flex-col py-8 items-center">
           <h2 className="text-3xl text-center font-bold text-white global-padding-b">
             A collection of projects I&apos;ve worked on
           </h2>
-          <div className="text-lg text-center w-1/2">
+          <div className="text-lg text-center w-full md:w-1/2">
             Below is a list of projects I&apos;ve worked on, including both personal
             initiatives and professional experiences from my previous work.
           </div>
         </div>
       </div>
 
-      <div className="mx-auto w-full mt-[-200px] global-padding-t bg-primary-50 rounded-t-lg">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 ">
-          {PROJECTS.map((project: ProjectTypes) => (
-            <div
-              key={project.id}
-              data-aos="fade-up"
-              data-aos-delay="200"
-              className="relative"
-              onMouseOver={() => {
-                setMouseOver(project.id);
-              }}
-              onMouseOut={() => {
-                setMouseOver(null);
-              }}
-            >
+      <div className="slideUp">
+        <div className="mx-auto w-full global-padding-t bg-primary-50 rounded-t-lg">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 ">
+            {PROJECTS.map((project: ProjectTypes) => (
               <div
-                className={`h-[350px] font-bold !text-xl bg-white rounded-[12px] ${project.className}`}
-                key={project.name}
+                key={project.id}
+                data-aos="fade-up"
+                data-aos-delay="200"
+                className="relative"
+                onMouseOver={() => {
+                  setMouseOver(project.id);
+                }}
+                onMouseOut={() => {
+                  setMouseOver(null);
+                }}
               >
-                {project.cover && (
-                  <Image
-                    fill
-                    priority
-                    sizes="(max-width: 768px) 100vw, 50vw"
-                    src={project.cover}
-                    alt="portfolio"
-                    className=" m-auto object-cover h-full inset-shadow-2xs p-1 rounded-[12px]"
-                  />
-                )}
-              </div>
+                <div
+                  className={`h-[350px] font-bold !text-xl bg-white rounded-[12px] ${project.className}`}
+                  key={project.name}
+                >
+                  {project.cover && (
+                    <Image
+                      fill
+                      priority
+                      sizes="(max-width: 768px) 100vw, 50vw"
+                      src={project.cover}
+                      alt="portfolio"
+                      className=" m-auto object-cover h-full inset-shadow-2xs p-1 rounded-[12px]"
+                    />
+                  )}
+                </div>
 
-              {projectDescription(project)}
-            </div>
-          ))}
+                {projectDescription(project)}
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </div>

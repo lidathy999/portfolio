@@ -32,7 +32,7 @@ export default function TopMenu() {
 
 
   return (
-    <div className="flex flex-row gap-2 justify-end pr-5 pt-3">
+    <div className="flex flex-row gap-2 justify-end pt-3">
       {menus.map((menu, index) => (
         <Button
           key={index}
