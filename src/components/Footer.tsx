@@ -5,7 +5,7 @@ export default function Footer() {
   const year = new Date().getFullYear();
 
   return (
-    <div className="py-6 text-center border-t border-secondary bg-white/10 backdrop-blur-none">
+    <div className="py-6 text-center border-t border-secondary bg-white/10 backdrop-blur-none" id="contactMe">
       <span>Copyright © {year} THY LYDA</span>
       <div className="flex gap-3 mt-2 justify-center">
         <a href='https://github.com/lidathy999'>

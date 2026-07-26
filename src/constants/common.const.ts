@@ -11,7 +11,7 @@ const PROJECTS = [
     id: 1,
     name: "Portfolio",
     cover: "/images/portfolio.png",
-    gitlab_url: "https://gitlab.com/Thylida/portfolio",
+    gitlab_url: "https://github.com/lidathy999/portfolio",
     title: "",
     description: "My personal portfolio website showcasing my skills, projects, and experience as a front-end developer.",
   },

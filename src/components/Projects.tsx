@@ -60,7 +60,7 @@ export function Projects() {
   };
 
   return (
-    <div>
+    <div className="p-10">
       <div className="bg-primary-500" id="projects">
         <div className="flex flex-col py-8 items-center">
           <h2 className="text-3xl text-center font-bold text-white global-padding-b">

@@ -5,7 +5,7 @@ import CloudDownloadIcon from '@mui/icons-material/CloudDownload';
 import ReorderIcon from '@mui/icons-material/Reorder';
 import PermContactCalendarIcon from '@mui/icons-material/PermContactCalendar';
 
-export default function TopMenu() {
+const TopMenu = () => {
   const handleClick = (id: string) => {
     const element = document.getElementById(id);
     if (element) {
@@ -32,7 +32,7 @@ export default function TopMenu() {
 
 
   return (
-    <div className="flex flex-row gap-2 justify-end pt-3">
+    <div className="flex flex-row gap-2 justify-end p-10">
       {menus.map((menu, index) => (
         <Button
           key={index}
@@ -49,3 +49,5 @@ export default function TopMenu() {
     </div>
   );
 }
+
+export default TopMenu;
