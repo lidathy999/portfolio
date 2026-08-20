@@ -1,45 +1,53 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #0f172a;
+  --foreground: #ededed;
   --secondary: #56d5d5;
+  --drawer: #111827;
+}
+
+.dark {
+  --background: #0f172a;
+  --foreground: #ededed;
+  --secondary: #56d5d5;
+  --drawer: #111827;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
+  --color-secondary: var(--secondary);
+  --color-drawer: var(--drawer);
+
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
-  --color-secondary: #56d5d5;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0f172a;
-    --foreground: #ededed;
-    --color-secondary: #56d5d5;
-  }
-}
-
+/* Base Styles */
 body {
-  background: #0f172a;
+  background-color: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-geist-sans), Arial, Helvetica, sans-serif;
 }
+
+/* Animations */
 .zoom-in-down {
   transform: scale(0.5) translateY(-50px);
   opacity: 0;
-  transition: transform 0.5s ease-out, opacity 0.5s ease-out;
+  transition:
+    transform 0.5s ease-out,
+    opacity 0.5s ease-out;
 }
 
 @keyframes slideUp {
-  0% {
-    transform: translateY(100%); /* Start fully down */
+  from {
+    transform: translateY(100%);
     opacity: 0;
   }
-  100% {
-    transform: translateY(0); /* End in original position */
+
+  to {
+    transform: translateY(0);
     opacity: 1;
   }
 }
@@ -48,12 +56,13 @@ body {
   animation: slideUp 0.5s ease-out forwards;
 }
 
+/* Gradient Text */
 .gradient-text {
-  background-image: linear-gradient(to right, #56d5d5, #0000ff ); 
-  -webkit-background-clip: text; 
+  background: linear-gradient(to right, #56d5d5, #0000ff);
   background-clip: text;
-  color: transparent; 
+  -webkit-background-clip: text;
+  color: transparent;
   -webkit-text-fill-color: transparent;
-  font-size: 3em;
+  font-size: 3rem;
   font-weight: bold;
 }

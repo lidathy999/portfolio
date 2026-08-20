@@ -7,11 +7,13 @@ import TopMenu from "@/components/TopMenu";
 const Home = () => {
 
   return (
-    <div className="min-w-[600px] overflow-auto">
+    <div className="" id="home">
       <AOSInit />
       <main className="grid gap-10">
-        <TopMenu />
-        <AboutMe />
+        <div className="hidden sm:block"> 
+          <TopMenu direction="row"/>
+        </div>
+        <AboutMe/>
         <Projects />
       </main>
       <footer>
