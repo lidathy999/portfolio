@@ -20,7 +20,7 @@ const TopMenu = ({ direction, onMenuClick }: TopMenuProps) => {
 
   const handleDownload = () => {
       const link = document.createElement('a');
-      link.href = '/resume_lyda.pdf';
+      link.href = '/thylyda_resume.pdf';
       link.download = 'resume';
       document.body.appendChild(link);
       link.click();

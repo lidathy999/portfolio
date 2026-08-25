@@ -54,7 +54,7 @@ export function Projects() {
           <div className="text-lg font-semibold pb-2">{title}</div>
         )}
 
-        {description && <div className="text-md pb-4">{description}</div>}
+        {description && <div className="text-md pb-4 overflow-y-auto">{description}</div>}
       </div>
     )
   };
