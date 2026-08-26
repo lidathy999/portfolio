@@ -40,7 +40,7 @@ const PROJECTS = [
     className: "bg-sky-100",
     project_url:
       "https://play.google.com/store/apps/details?id=com.camis.camemis_student_application&hl=en",
-    description: "The CAMEMIS App is an Educational Management and Information System (EMIS) designed to improve the quality of teaching and learning, thus providing a better space for teachers, students and parents to collaborate. The app offers teachers quick access to the most frequent course facilitation tasks, including daily attendance taking, grading, in-class communication, sending announcements, and staying updated with daily tasks. In addition, teachers can easily review a detailed report on student progress, manage multiple class sections and create tests and exams for each subject.",
+    description: "The CAMEMIS App is an Educational App designed to improve the quality of teaching and learning, thus providing a better space for teachers, students and parents to collaborate.",
   },
   {
     id: 6,
@@ -64,7 +64,7 @@ const PROJECTS = [
     cover: "/images/e-menu.png",
     gitlab_url: "",
     project_url: "",
-    description: "Easy, Efficient, Experienced POS Restaurant System. Manage easier, control cost more efficiently with experienced POS system on restaurant. You can access to the cloud anytime and anywhere in the world. eMenu works both online and offline.",
+    description: "Easy, Efficient, Experienced POS Restaurant System. Manage easier, control cost more efficiently with experienced POS system on restaurant.",
   },
 ];
 
