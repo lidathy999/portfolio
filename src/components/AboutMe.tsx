@@ -10,7 +10,7 @@ const AboutMe = ()=> {
           alt="profile"
           width={300}
           height={400}
-          className="float-left w-full m-0 sm:m-5 h-[300px] sm:h-[300px] sm:w-[300px] border-[2px] border-secondary object-cover rounded-xl"
+          className="float-left w-full m-0 sm:mr-5 h-[300px] sm:h-[300px] sm:w-[300px] border-[2px] border-secondary rounded-xl"
         />
       <h1 data-aos="flip-up" className="text-xl font-bold gradient-text">Hello, I&apos;m Lyda!</h1>
       <p className="text-2xl font-semibold">

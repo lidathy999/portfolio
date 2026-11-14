@@ -28,10 +28,10 @@ const TopMenu = ({ direction, onMenuClick }: TopMenuProps) => {
     };
 
   const menus = [
-    { label: "Home", id: "home", icon: <HomeIcon fontSize="small" />, onClick: () => handleClick("home") },
-    { label: "Resume", id: "resume", icon: <CloudDownloadIcon fontSize="small" />, onClick: handleDownload },
-    { label: "Projects", id: "projects", icon: <ReorderIcon fontSize="small" />, onClick: () => handleClick("projects") },
-    { label: "Contact", id: "contactMe", icon: <PermContactCalendarIcon fontSize="small" />, onClick: () => handleClick("contactMe") },
+    { label: "Home", id: "home", icon: <HomeIcon fontSize="small"/>, onClick: () => handleClick("home") },
+    { label: "Resume", id: "resume", icon: <CloudDownloadIcon fontSize="small"/>, onClick: handleDownload },
+    { label: "Projects", id: "projects", icon: <ReorderIcon fontSize="small"/>, onClick: () => handleClick("projects") },
+    { label: "Contact", id: "contactMe", icon: <PermContactCalendarIcon fontSize="small"/>, onClick: () => handleClick("contactMe") },
   ];
 
   const wrapMenuStyle = (direction === "row") 
@@ -57,7 +57,7 @@ const TopMenu = ({ direction, onMenuClick }: TopMenuProps) => {
           }}
           variant= {buttonVariant}
           color="inherit"
-          className={`active:!bg-secondary gap-2 hover:!bg-secondary hover:!text-black active:!text-black ${buttonStyle}`}
+          className={`!text-secondary active:!bg-secondary gap-2 hover:!bg-secondary hover:!text-black active:!text-black ${buttonStyle}`}
           aria-label="menu"
         >
           {menu.icon} &nbsp;

@@ -100,7 +100,7 @@ export function Projects() {
                       sizes="(max-width: 768px) 100vw, 50vw"
                       src={project.cover}
                       alt="portfolio"
-                      className=" m-auto object-cover h-full inset-shadow-2xs p-1 rounded-[12px]"
+                      className=" m-auto h-full inset-shadow-2xs p-1 object-scale-down rounded-[12px]"
                     />
                   )}
                 </div>
